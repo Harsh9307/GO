@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// var a uint8
 	// a = 10
@@ -110,16 +112,73 @@ func main() {
 	println(15 == 017)
 	println(15 == 0xF)
 
-	//There are four integer literal forms, the deimal(base 10 ) form , the octal (base 8) form , the hex (base 16) form and the binary form(base 2). For example, the following four integer lierals all denote 
-	
+	//There are four integer literal forms, the deimal(base 10 ) form , the octal (base 8) form , the hex (base 16) form and the binary form(base 2). For example, the following four integer lierals all denote
+
 	//15 in decimal .0xF  // the hex form(starts with a "0x" or "0X")
 	/*
-	the octal form ( starts with a "0" ,"0o" or "0O")
-	0o17 0O17 0b1111 // the binary form (starts with a "0b" or "0B")
-	0B1111 15 // the decimal form (starts with a "0")
+		the octal form ( starts with a "0" ,"0o" or "0O")
+		0o17 0O17 0b1111 // the binary form (starts with a "0b" or "0B")
+		0B1111 15 // the decimal form (starts with a "0")
 	*/
 
-	
+	var a int = 37
+	a++
+	println(a)
 
+	fmt.Printf("The binary of %d is %b\n", a, a)
+	fmt.Printf("The hexadecimal of %d is %0x\n", a, a)
+	fmt.Printf("The octal of %d is %0o\n", a, a)
 
+	/*
+			Format Specifiers:
+
+		It tells Golang how to format different data types. Some of the most commonly used specifiers are:
+
+		⚫v-formats the value in a default format
+
+		⚫d-formats decimal integers
+
+		⚫g-formats the floating-point numbers
+
+		b-formats base 2 numbers
+
+		⚫o-formats base 8 numbers
+
+		⚫t-formats true or false values(Boolean)
+	*/
+	fmt.Printf("The expression 15==oxf is %t\n", 15 == 0xf)
+	fmt.Printf("The expression 15==oxf is %T\n", 15 == 0xf)
+
+	// var i, j string = "Hello", "world"
+	// fmt.Print(i, "\n")
+	// fmt.Print(j, "\n")
+
+	// var i, j = 10, "world"
+	// fmt.Print(i, j)
+
+	// var i = 15.5
+	// var text = "Hello world!"
+
+	// fmt.Printf("%v\n", i)
+	// fmt.Printf("%#v\n", i)
+	// fmt.Printf("%v%%\n", i)
+	// fmt.Printf("%T\n", i)
+
+	// fmt.Printf("%v\n", text)
+	// fmt.Printf("%#v\n", text)
+	// fmt.Printf("%v%%\n", text)
+	// fmt.Printf("%T\n", text)
+
+	var i = 15
+	fmt.Printf("%b\n", i)
+	fmt.Printf("%d\n", i)
+	fmt.Printf("%+d\n", i)
+	fmt.Printf("%o\n", i)
+	fmt.Printf("%O\n", i)
+	fmt.Printf("%x\n", i)
+	fmt.Printf("%X\n", i)
+	fmt.Printf("%#x\n", i)
+	fmt.Printf("%4d\n", i)
+	fmt.Printf("%-4d\n", i)
+	fmt.Printf("%04d\n", i)
 }
