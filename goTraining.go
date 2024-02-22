@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	// var a uint8
@@ -262,5 +265,59 @@ func main() {
 	// fmt.Printf("value of y is %.2f and type is %T\n", y, y)
 	// fmt.Printf("value of z is %d and type is %T\n", z, z)
 
-	
+	//*********************functions***********
+
+	//greet()
+	// var n1, n2 int
+	// fmt.Scanf("%d %d", &n1, &n2)
+	// // result := addNumbers(n1, n2)
+	// // fmt.Println("result: ", result)
+	// sum, difference := calculate(n1, n2)
+	// fmt.Println("Sum: ", sum, "Difference", difference)
+	// calculateSquare(10)
+	// calculateSquare(20)
+	// calculateSquare(30)
+
+	addNumbers()
+	//cannot access sum out of its local scope
+	fmt.Println("Sum is :", sum)
+	fmt.Println("Countdown starts:")
+	countDown(3)
+
+}
+
+var sum int
+
+func countDown(number int) {
+	if number < 0 {
+		fmt.Println("Countdown ends !!")
+		return
+	}
+	fmt.Println(number)
+	time.Sleep(1 * time.Second)
+	countDown(number - 1)
+}
+func addNumbers() {
+	//local variables
+	sum = 5 + 9
+
+}
+func greet() {
+	fmt.Printf("Boring Clas !!!! :(\n")
+}
+
+// func addNumbers(n1 int, n2 int) int {
+
+//		sum := n1 + n2
+//		fmt.Println("Sum: ", sum)
+//		return sum
+//	}
+func calculate(n1 int, n2 int) (int, int) {
+	sum := n1 + n2
+	difference := n1 - n2
+	return sum, difference
+}
+func calculateSquare(num int) {
+	square := num * num
+	fmt.Printf("Square of %d is %d\n", num, square)
 }
