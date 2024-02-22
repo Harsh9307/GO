@@ -109,8 +109,8 @@ func main() {
 	// var num4 = 4 + 1i
 	// fmt.Printf("Scientific Notation of num4 %e \n", num4)
 
-	println(15 == 017)
-	println(15 == 0xF)
+	// println(15 == 017)
+	// println(15 == 0xF)
 
 	//There are four integer literal forms, the deimal(base 10 ) form , the octal (base 8) form , the hex (base 16) form and the binary form(base 2). For example, the following four integer lierals all denote
 
@@ -121,13 +121,13 @@ func main() {
 		0B1111 15 // the decimal form (starts with a "0")
 	*/
 
-	var a int = 37
-	a++
-	println(a)
+	// var a int = 37
+	// a++
+	// println(a)
 
-	fmt.Printf("The binary of %d is %b\n", a, a)
-	fmt.Printf("The hexadecimal of %d is %0x\n", a, a)
-	fmt.Printf("The octal of %d is %0o\n", a, a)
+	// fmt.Printf("The binary of %d is %b\n", a, a)
+	// fmt.Printf("The hexadecimal of %d is %0x\n", a, a)
+	// fmt.Printf("The octal of %d is %0o\n", a, a)
 
 	/*
 			Format Specifiers:
@@ -146,8 +146,8 @@ func main() {
 
 		⚫t-formats true or false values(Boolean)
 	*/
-	fmt.Printf("The expression 15==oxf is %t\n", 15 == 0xf)
-	fmt.Printf("The expression 15==oxf is %T\n", 15 == 0xf)
+	// fmt.Printf("The expression 15==oxf is %t\n", 15 == 0xf)
+	// fmt.Printf("The expression 15==oxf is %T\n", 15 == 0xf)
 
 	// var i, j string = "Hello", "world"
 	// fmt.Print(i, "\n")
@@ -169,16 +169,98 @@ func main() {
 	// fmt.Printf("%v%%\n", text)
 	// fmt.Printf("%T\n", text)
 
-	var i = 15
-	fmt.Printf("%b\n", i)
-	fmt.Printf("%d\n", i)
-	fmt.Printf("%+d\n", i)
-	fmt.Printf("%o\n", i)
-	fmt.Printf("%O\n", i)
-	fmt.Printf("%x\n", i)
-	fmt.Printf("%X\n", i)
-	fmt.Printf("%#x\n", i)
-	fmt.Printf("%4d\n", i)
-	fmt.Printf("%-4d\n", i)
-	fmt.Printf("%04d\n", i)
+	// var i = 15
+	// fmt.Printf("%b\n", i)
+	// fmt.Printf("%d\n", i)
+	// fmt.Printf("%+d\n", i)
+	// fmt.Printf("%o\n", i)
+	// fmt.Printf("%O\n", i)
+	// fmt.Printf("%x\n", i)
+	// fmt.Printf("%X\n", i)
+	// fmt.Printf("%#x\n", i)
+	// fmt.Printf("%4d\n", i)
+	// fmt.Printf("%-4d\n", i)
+	// fmt.Printf("%04d\n", i)
+
+	// var txt = "Hello"
+	// fmt.Printf("%s\n", txt)   // Hello
+	// fmt.Printf("%q\n", txt)   // "Hello"
+	// fmt.Printf("%8s\n", txt)  //   Hello
+	// fmt.Printf("%-8s\n", txt) // "Hello   "
+	// fmt.Printf("%x\n", txt)   //
+	// fmt.Printf("% x\n", txt)
+
+	// var ftemp float64 = 0
+	// var ctemp float64 = 0
+
+	// fmt.Printf("Enter temperature in Celcsius")
+	// fmt.Scanf("%f", &ctemp)
+	// ftemp = (ctemp * 1.8) + 32
+	// fmt.Printf("Temperature in Fahrenheit : %.2f", ftemp)
+
+	// import "os"
+	// import "io"
+
+	// var dd int = 17
+	// var mm int =04
+	// var str string;
+	// var year int = 2021
+	// str = fmt.Sprintf("%02d-%02d-%04d",dd,mm,year);
+
+	// var str, str1, str2 string
+	// var a int
+	// fmt.Printf("Enter string1:")
+	// fmt.Scan(&str, &str1, &a)
+	// fmt.Printf("Enter string2:")
+	// fmt.Scan(&str2)
+	// fmt.Printf("Result : %s %s %d\nsecond result: %s", str, str1, a, str2) // harsh diwase 1
+
+	// var a int = 123
+	// var b uint = 0
+
+	// // Assign the value of a to the b
+	// b = a
+
+	// //Printing the values
+	// fmt.Printf("a = %d , b= %d\n", a, b)     //Output : cannot use a (variable of type int) as uint value in assignment
+
+	// var b int = 123
+	// var a uint = 0
+
+	// // Assign the value of a to the b
+	// b = int(a)
+
+	// //Printing the values
+	// fmt.Printf("a = %d , b= %d\n", a, b)  // a=0 , b=0
+
+	// var a int = -123
+	// var b uint = 0
+
+	// // Assign the value of a to the b
+	// b = uint(a)
+
+	// //Printing the values
+	// fmt.Printf("a = %d , b= %d\n", a, b) // a=0 , b=0
+
+	// var b int = -19
+	// var a uint = 0
+
+	// // Assign the value of a to the b
+	// b = int(a)
+
+	// //Printing the values
+	// fmt.Printf("a = %d , b= %d\n", a, b)  // a=0 , b=0
+
+	// var x int = 42
+	// // converting into float64
+	// var y float64 = float64(x)
+	// // converting float64 to unint
+	// var z uint = uint(y)
+
+	// printing the types and values of the variables
+	// fmt.Printf("value of x is %d and type is %T\n", x, x)
+	// fmt.Printf("value of y is %.2f and type is %T\n", y, y)
+	// fmt.Printf("value of z is %d and type is %T\n", z, z)
+
+	
 }
