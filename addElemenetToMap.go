@@ -22,4 +22,5 @@ func main() {
 	for id, name := range students {
 		fmt.Printf("id of %d is %s\n", id, name)
 	}
+	
 }
